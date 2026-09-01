@@ -1,0 +1,6 @@
+{
+  "name": "@stagapp/api",
+  "version": "0.0.0",
+  "private": true,
+  "description": "StagApp backend API"
+}

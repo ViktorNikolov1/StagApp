@@ -1,0 +1,134 @@
+name: Feature Request
+description: Propose a new feature for StagApp
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Feature Title
+      description: A concise name for this feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-objective
+    attributes:
+      label: Business Objective
+      description: Why does this feature exist? What problem does it solve?
+    validations:
+      required: true
+
+  - type: input
+    id: requirement-ids
+    attributes:
+      label: Requirement IDs
+      description: "Related requirement IDs from REQUIREMENTS.md (e.g., REQ-POST-001, REQ-MEDIA-001)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      description: "As a [role], I want to [action] so that [benefit]."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this feature?
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly NOT included?
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What must exist before this can be implemented? (other features, services, infrastructure)
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Specific, testable conditions that must be met.
+        Use checkbox format:
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: security-considerations
+    attributes:
+      label: Security Considerations
+      description: |
+        What security implications does this feature have?
+        Consider: authentication, authorization, input validation, data exposure, file handling.
+    validations:
+      required: true
+
+  - type: textarea
+    id: api-changes
+    attributes:
+      label: API Changes
+      description: New or modified API endpoints. Follow docs/API.md conventions.
+    validations:
+      required: false
+
+  - type: textarea
+    id: database-changes
+    attributes:
+      label: Database Changes
+      description: New or modified tables, columns, indexes. Reference docs/DATA_MODEL.md.
+    validations:
+      required: false
+
+  - type: textarea
+    id: ui-changes
+    attributes:
+      label: UI Changes
+      description: New or modified screens, components, navigation.
+    validations:
+      required: false
+
+  - type: textarea
+    id: tests-required
+    attributes:
+      label: Tests Required
+      description: |
+        What must be tested?
+        - [ ] Happy path
+        - [ ] Invalid input
+        - [ ] Unauthorized access
+        - [ ] IDOR/ownership
+        - [ ] Edge cases
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: |
+        All conditions for this feature to be considered complete.
+        - [ ] Code implemented and reviewed
+        - [ ] Tests written and passing
+        - [ ] Security review passed
+        - [ ] Documentation updated
+        - [ ] API docs updated (if applicable)
+    validations:
+      required: true
